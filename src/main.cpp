@@ -20,8 +20,7 @@ void loop() {
   int water = digitalRead(WATER_SENSOR);
 
   lcd.setCursor(0, 2);
-  // lcd.print( water ? "* Water Detected *" : "* No Water Present *");
-
+  
   if (water) {
     lcd.print("* Water Detected *");
   } else {
